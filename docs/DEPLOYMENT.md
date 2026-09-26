@@ -6,7 +6,7 @@ Local PostgreSQL runs in the root Compose file on `127.0.0.1:5433`, avoiding col
 
 ## Production shape
 
-The intended project identity is `vgym-membership-ops`. Its Compose stack contains:
+The Compose project identity is `vgym_membership_ops`. Its source directory is `/srv/vgym-membership-ops`. The stack contains:
 
 - `vgym-membership-db`: PostgreSQL 16 with a dedicated database, user, generated password, and named persistent volume
 - `vgym-membership-api`: NestJS production build, private to the Compose network and the shared proxy network
@@ -36,7 +36,7 @@ shared Nginx :80/:443
 1. Build and verify `pnpm lint`, `pnpm typecheck`, `pnpm test`, and `pnpm build`.
 2. Copy the source and production Compose file to an isolated host directory.
 3. Generate `.env` on the server with a unique database password and JWT secret, mode `0600`.
-4. Build and start only the `vgym-membership-ops` Compose project.
+4. Build and start only the `vgym_membership_ops` Compose project.
 5. Wait for database health, run migrations, and seed only safe demo data.
 6. Validate API health from the proxy network.
 7. Add or verify the Nginx server block and certificate, run `nginx -t`, and reload the shared proxy.

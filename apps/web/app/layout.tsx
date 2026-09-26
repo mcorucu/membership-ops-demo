@@ -3,7 +3,8 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Membership Ops',
-  description: 'A production-minded membership billing interview sample.'
+  description: 'A production-minded membership billing interview sample.',
+  icons: { icon: '/favicon.ico' }
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

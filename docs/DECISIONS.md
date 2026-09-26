@@ -104,7 +104,7 @@
 
 **Context:** The verified Euronodes server (`marketplace-prod-01`) already has a shared Nginx proxy and other Docker Compose projects.
 
-**Decision:** Deploy an isolated Compose project named `vgym-membership-ops`, joining only the existing `eskisehiraraba_prod_edge` network for proxy routing and keeping PostgreSQL on a private project network. Integrate through the existing shared proxy with a scoped vhost and graceful reload.
+**Decision:** Deploy an isolated Compose project named `vgym_membership_ops`, from `/srv/vgym-membership-ops`, joining only the existing `eskisehiraraba_prod_edge` network for proxy routing and keeping PostgreSQL on a private project network. Integrate through the existing shared proxy with a scoped vhost and graceful reload.
 
 **Alternatives:** Host ports; a second reverse proxy; reuse of the existing database.
 
