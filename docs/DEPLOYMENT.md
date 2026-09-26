@@ -21,7 +21,7 @@ The verified host is Euronodes SSH alias `marketplace-prod-01`. Its shared proxy
 Expected routing:
 
 ```text
-Cloudflare DNS (proxy pending; currently DNS-only)
+Cloudflare DNS (proxied; Full (strict))
         |
         v
 shared Nginx :80/:443
@@ -45,8 +45,8 @@ shared Nginx :80/:443
 
 ## Verified release state
 
-The release is running on `marketplace-prod-01` in `/srv/vgym-membership-ops` with `vgym-membership-db`, `vgym-membership-api`, and `vgym-membership-web`. `vgym.mcorucu.com` resolves to the Euronodes origin, HTTP redirects to HTTPS, the Let's Encrypt certificate covers the hostname, and the shared proxy serves the app and `/api/v1/health`. The deployment did not modify the Hetzner host or existing AutoCore/EskişehirAraba projects.
+The release is running on `marketplace-prod-01` in `/srv/vgym-membership-ops` with `vgym-membership-db`, `vgym-membership-api`, and `vgym-membership-web`. `vgym.mcorucu.com` is Cloudflare-proxied with Full (strict) TLS, HTTP redirects to HTTPS, the Let's Encrypt certificate covers the hostname, and the shared proxy serves the app and `/api/v1/health`. The deployment did not modify the Hetzner host or existing AutoCore/EskişehirAraba projects.
 
 ## Cloudflare
 
-The `vgym` record exists and currently resolves directly to the Euronodes origin. The remaining manual step is to enable Cloudflare Proxy (orange cloud) and set SSL/TLS to Full (strict) after confirming the origin certificate. Keep application authentication in the product; Cloudflare Access is not required. Use normal managed WAF protections and no caching for `/api/v1/*` or private application responses. Rate limiting for login should be enabled if the account plan and existing convention support it.
+The `vgym` record is proxied through Cloudflare and SSL/TLS is Full (strict). Keep application authentication in the product; Cloudflare Access is not required. Use normal managed WAF protections and no caching for `/api/v1/*` or private application responses. Rate limiting for login should be enabled if the account plan and existing convention support it.

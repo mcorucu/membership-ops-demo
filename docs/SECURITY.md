@@ -22,7 +22,7 @@ The demo web app stores its short-lived bearer token in `sessionStorage`, sends 
 
 ## Deployment posture
 
-Production uses `NODE_ENV=production`, built containers, a private PostgreSQL network, no public database port, controlled CORS, security response headers from Next, and the existing Euronodes Nginx TLS termination convention. Authenticated API responses are marked `no-store` and are not cached by the proxy. The origin certificate covers `vgym.mcorucu.com`; Cloudflare proxy mode and Full (strict) remain an external account-level configuration step.
+Production uses `NODE_ENV=production`, built containers, a private PostgreSQL network, no public database port, controlled CORS, security response headers from Next, and the existing Euronodes Nginx TLS termination convention. Authenticated API responses are marked `no-store` and are not cached by the proxy. The origin certificate covers `vgym.mcorucu.com`; Cloudflare Proxy is enabled with Full (strict) TLS.
 
 ## Review checklist
 
@@ -35,5 +35,5 @@ Production uses `NODE_ENV=production`, built containers, a private PostgreSQL ne
 - [x] integer cents for money
 - [x] generic 500 response
 - [x] Production DNS record, origin certificate, HTTP redirect, and origin HTTPS routing
-- [ ] Cloudflare Proxy and Full (strict) mode, pending external account configuration
+- [x] Cloudflare Proxy and Full (strict) mode verified at the public edge
 - [ ] Production rate limiting and full identity lifecycle, deliberately out of scope for this interview sample
