@@ -1,0 +1,69 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  MEMBER
+  ADMIN
+}
+
+enum MembershipStatus {
+  ACTIVE
+  EXPIRED
+  CANCELLED
+}
+
+enum PaymentStatus {
+  PAID
+  FAILED
+}
+
+model User {
+  id           String       @id @default(cuid())
+  email        String       @unique
+  passwordHash String
+  role         Role         @default(MEMBER)
+  membership   Membership?
+  payments     Payment[]
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  @@index([role])
+}
+
+model Membership {
+  id               String           @id @default(cuid())
+  userId           String           @unique
+  plan             String
+  monthlyPriceCents Int
+  status           MembershipStatus @default(ACTIVE)
+  validUntil       DateTime
+  user             User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  payments         Payment[]
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+
+  @@index([status])
+  @@index([validUntil])
+}
+
+model Payment {
+  id               String        @id @default(cuid())
+  userId           String
+  membershipId     String
+  amountCents      Int
+  months           Int
+  status           PaymentStatus
+  providerReference String
+  user             User          @relation(fields: [userId], references: [id], onDelete: Restrict)
+  membership       Membership    @relation(fields: [membershipId], references: [id], onDelete: Restrict)
+  createdAt        DateTime      @default(now())
+
+  @@index([userId, createdAt])
+  @@index([membershipId, createdAt])
+}

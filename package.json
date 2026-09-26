@@ -1,0 +1,23 @@
+{
+  "name": "membership-ops-demo",
+  "private": true,
+  "packageManager": "pnpm@11.15.1",
+  "scripts": {
+    "dev": "concurrently -n api,web -c yellow,cyan \"pnpm dev:api\" \"pnpm dev:web\"",
+    "dev:api": "pnpm --filter @membership-ops/api dev",
+    "dev:web": "pnpm extract:snippets && pnpm --filter @membership-ops/web dev",
+    "build": "pnpm extract:snippets && pnpm --filter @membership-ops/api build && pnpm --filter @membership-ops/web build",
+    "lint": "pnpm --recursive lint",
+    "typecheck": "pnpm --recursive typecheck",
+    "test": "pnpm --filter @membership-ops/api test",
+    "test:watch": "pnpm --filter @membership-ops/api test:watch",
+    "db:up": "docker compose up -d db",
+    "db:down": "docker compose down",
+    "db:migrate": "pnpm --filter @membership-ops/api prisma:migrate",
+    "db:seed": "pnpm --filter @membership-ops/api prisma:seed",
+    "extract:snippets": "node scripts/extract-developer-flow.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
