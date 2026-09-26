@@ -8,7 +8,7 @@ type Membership = { id: string; plan: string; monthlyPriceCents: number; status:
 type Overview = { id: string; email: string; role: User['role']; membership: Membership };
 type Stage = { id: string; title: string; label: string; path: string; description: string; lines: string[] };
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL ?? '/api';
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL ?? '/api/v1';
 const MONTH_OPTIONS = [1, 3, 6, 12] as const;
 const DEMO_CREDENTIALS = { email: 'member@membership-ops.local', password: 'demo-member-password' };
 
