@@ -10,7 +10,7 @@ This sample is deliberately candid about what it does not solve.
 - There is no fraud/risk logic, rate limiting middleware, account lockout, email verification, MFA, or password reset flow.
 - The UI is one workspace and does not model multiple organizations, admin management screens, or a full subscription product catalog.
 - The Developer View is a build-time source explorer, not an IDE. It is a teaching aid and does not replace opening real source files.
-- Production DNS and TLS depend on the existing Cloudflare and Nginx setup. If DNS credentials are unavailable, deployment can be prepared but the public hostname cannot be truthfully marked live.
+- The Euronodes origin, DNS record, HTTP redirect, and hostname certificate are verified live. The DNS record is still DNS-only because Cloudflare account access was not available during release; Proxy mode and Full (strict) must be enabled before calling the Cloudflare edge configuration complete.
 - The production seed contains safe demo credentials. A real deployment would remove demo credentials, use a controlled bootstrap, and rotate all secrets.
 
 The correct production evolution is not to add every fashionable component. It is to add a durable payment state machine, idempotency, provider reconciliation, better identity lifecycle, durable observability, and operational controls when the product actually needs them.

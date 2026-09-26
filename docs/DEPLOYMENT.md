@@ -12,20 +12,20 @@ The intended project identity is `vgym-membership-ops`. Its Compose stack contai
 - `vgym-membership-api`: NestJS production build, private to the Compose network and the shared proxy network
 - `vgym-membership-web`: Next.js standalone production build, private to the Compose network and the shared proxy network
 
-The database is never published on a host port. API and web join the existing external Docker network named `web` only so the existing Nginx proxy can route to them. The database stays on a project-specific internal network. No unrelated Compose project, volume, image, or container is part of the deployment command.
+The database is never published on a host port. API and web join the existing external Docker network named `eskisehiraraba_prod_edge` only so the existing Nginx proxy can route to them. The database stays on a project-specific internal network. No unrelated Compose project, volume, image, or container is part of the deployment command.
 
 ## Existing Euronodes integration
 
-The host inventory found a shared `nginx-proxy` container at `/var/www/nginx` and an external `web` network. The safe integration is a new server block for `vgym.mcorucu.com` pointing to the new web and API container names, followed by `nginx -t` and an in-place reload. The existing proxy is not replaced. The certificate must be issued for `vgym.mcorucu.com` before enabling the HTTPS server block.
+The verified host is Euronodes SSH alias `marketplace-prod-01`. Its shared proxy is container `eskisehiraraba_proxy-proxy-1`, with configuration under `/srv/shared/reverse-proxy` and external network `eskisehiraraba_prod_edge`. The safe integration is a new server block for `vgym.mcorucu.com` pointing to the new web and API container names, followed by `nginx -t` and an in-place reload. The existing proxy is not replaced. The certificate is stored in the shared Let's Encrypt tree and is mounted read-only into the proxy.
 
 Expected routing:
 
 ```text
-Cloudflare DNS (proxied)
+Cloudflare DNS (proxy pending; currently DNS-only)
         |
         v
 shared Nginx :80/:443
-   /api/* -> vgym-membership-api:3001
+   /api/v1/* -> vgym-membership-api:3001
    /*     -> vgym-membership-web:3000
         |
         +-- private PostgreSQL network -> vgym-membership-db:5432
@@ -43,6 +43,10 @@ shared Nginx :80/:443
 8. Verify HTTPS, HTTP redirect, API routing, login, both renewal scenarios, and browser behavior.
 9. Record the actual state in the final release report without printing secrets.
 
+## Verified release state
+
+The release is running on `marketplace-prod-01` in `/srv/vgym-membership-ops` with `vgym-membership-db`, `vgym-membership-api`, and `vgym-membership-web`. `vgym.mcorucu.com` resolves to the Euronodes origin, HTTP redirects to HTTPS, the Let's Encrypt certificate covers the hostname, and the shared proxy serves the app and `/api/v1/health`. The deployment did not modify the Hetzner host or existing AutoCore/EskişehirAraba projects.
+
 ## Cloudflare
 
-Create a proxied DNS record for `vgym` pointing to the existing Euronodes public IP. Keep application authentication in the product; Cloudflare Access is not required. Use HTTPS-only behavior, Full (strict) when the origin certificate is valid for the hostname, normal managed WAF protections, and no caching for `/api/*` or private application responses. Rate limiting for login should be enabled if the account plan and existing convention support it.
+The `vgym` record exists and currently resolves directly to the Euronodes origin. The remaining manual step is to enable Cloudflare Proxy (orange cloud) and set SSL/TLS to Full (strict) after confirming the origin certificate. Keep application authentication in the product; Cloudflare Access is not required. Use normal managed WAF protections and no caching for `/api/v1/*` or private application responses. Rate limiting for login should be enabled if the account plan and existing convention support it.
