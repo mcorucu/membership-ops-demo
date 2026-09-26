@@ -1,0 +1,71 @@
+name: vgym_membership_ops
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: vgym-membership-db
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - vgym_membership_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    networks:
+      - internal
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    container_name: vgym-membership-api
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      API_PORT: 3001
+      DATABASE_URL: ${DATABASE_URL}
+      JWT_SECRET: ${JWT_SECRET}
+      WEB_ORIGIN: ${WEB_ORIGIN}
+    depends_on:
+      db:
+        condition: service_healthy
+    expose:
+      - "3001"
+    networks:
+      - internal
+      - edge
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    container_name: vgym-membership-web
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      HOSTNAME: 0.0.0.0
+    depends_on:
+      - api
+    expose:
+      - "3000"
+    networks:
+      - edge
+
+volumes:
+  vgym_membership_postgres:
+    name: vgym_membership_postgres
+
+networks:
+  internal:
+    name: vgym_membership_internal
+  edge:
+    external: true
+    name: eskisehiraraba_prod_edge
