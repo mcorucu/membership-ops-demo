@@ -2,7 +2,7 @@
 
 ## Secrets and identity
 
-`DATABASE_URL` and `JWT_SECRET` are environment-only. `.env` and `.env.*` are ignored, with `.env.example` explicitly allowed. The seed has demo passwords only for local or controlled demo use. Passwords are hashed with `bcrypt.hash` and checked with `bcrypt.compare`; password hashes are never selected into API responses.
+`DATABASE_URL`, `JWT_SECRET`, and `ADMIN_SEED_PASSWORD` are environment-only. `.env` and `.env.*` are ignored, with `.env.example` explicitly allowed. The seed has one intentionally public member demo password; admin seed data is created only when a local-only `ADMIN_SEED_PASSWORD` is supplied. Passwords are hashed with `bcrypt.hash` and checked with `bcrypt.compare`; password hashes are never selected into API responses.
 
 The login failure is generic for unknown email and wrong password. `JwtAuthGuard` verifies the signature and expiry using the server-side secret. Controllers use `CurrentUser`, and the membership service compares the verified JWT subject to the membership owner. The client cannot choose identity by sending a user ID.
 
