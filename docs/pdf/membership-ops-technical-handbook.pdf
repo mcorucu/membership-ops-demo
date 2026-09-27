@@ -1,0 +1,1328 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+3 0 obj
+<< /Length 618 >>
+stream
+0.090 0.086 0.082 rg
+0.0 0.0 595.0 842.0 re f
+0.996 0.431 0.000 rg
+19.0 42.0 10.0 10.0 re f
+1.000 0.718 0.302 rg
+19.0 814.0 50.0 1.2 re f
+1.000 0.718 0.302 rg
+BT /F2 8.0 Tf 54.0 735.0 Td (ENGINEERING CODE SAMPLE / VERSION 1.0) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 36.0 Tf 54.0 665.0 Td (Membership Ops) Tj ET
+0.780 0.750 0.730 rg
+BT /F1 11.0 Tf 54.0 625.0 Td (A readable path from UI action to an authenticated,) Tj ET
+0.780 0.750 0.730 rg
+BT /F1 11.0 Tf 54.0 608.0 Td (authorized, transactional renewal request.) Tj ET
+1.000 0.718 0.302 rg
+BT /F2 8.0 Tf 54.0 575.0 Td (NestJS  /  Prisma  /  PostgreSQL  /  Next.js) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Length 2365 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (02) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 21.0 Tf 54.0 780.0 Td (Contents) Tj ET
+0.475 0.439 0.404 rg
+BT /F1 8.0 Tf 54.0 745.0 Td (A compact navigation map for the implementation.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 727.0 Td (1. Project purpose) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 708.0 Td (2. Scope and non-goals) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 689.0 Td (3. Architecture) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 670.0 Td (4. Repository structure) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 651.0 Td (5. Primary request lifecycle) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 632.0 Td (6. Login and authentication) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 613.0 Td (7. Authorization) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 594.0 Td (8. Input validation) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 575.0 Td (9. Membership business rules) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 556.0 Td (10. Pricing) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 537.0 Td (11. Payment boundary) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 518.0 Td (12. Database design) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 499.0 Td (13. Prisma access) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 480.0 Td (14. Transaction semantics) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 461.0 Td (15. Error handling) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 442.0 Td (16. Logging and request correlation) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 423.0 Td (17. Security decisions) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 404.0 Td (18. Testing strategy) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 385.0 Td (19. UI architecture) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 366.0 Td (20. Developer View architecture) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 347.0 Td (21. Deployment) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 328.0 Td (22. Known limitations) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 309.0 Td (23. Production evolution) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 290.0 Td (24. Review path) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 271.0 Td (Appendix: exact source map) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 397 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (03) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 21.0 Tf 54.0 780.0 Td (Membership Ops engineering handbook) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 747.0 Td (Version 1.0 - reviewer documentation) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 1529 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (04) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (How to use this handbook) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (Membership Ops is intentionally small enough to hold in your head. This handbook is a map) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (through the implementation, not a replacement for opening the source. Start with the primary) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (request, then follow the code paths named in each chapter.) Tj ET
+1.000 0.973 0.937 rg
+54.0 628.0 487.0 82.0 re f
+0.996 0.431 0.000 rg
+54.0 628.0 3.0 82.0 re f
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 693.0 Td (Design rationale) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 682.0 Td (The primary request is easy to trace through the UI, API, validation, identity,) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 671.0 Td (authorization, business rules, provider boundary, database transaction, errors, and logs) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 660.0 Td (without requiring a distributed system diagram. The main source files are) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 649.0 Td (apps/web/app/page.tsx, apps/api/src/memberships/memberships.controller.ts, and) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 638.0 Td (apps/api/src/memberships/memberships.service.ts.) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 2134 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (05) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (1. Project purpose) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (Membership Ops is a membership billing application created as an engineering code sample. A) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (signed-in member can inspect membership state, choose a renewal term, select a deterministic) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (demo payment outcome, and see the result reflected in membership and payment history. A) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 712.0 Td (reviewer can open Developer View and trace the same behavior to actual source paths.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (The application is production-minded in its boundaries rather than production-sized in its) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (scope. It uses real request validation, JWT verification, bcrypt password comparison, typed) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (relational access, integer cents, a database transaction, structured request correlation, and) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 654.0 Td (predictable error responses. It does not pretend that a fake payment provider or a single) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 641.0 Td (Compose project solves every payment and identity problem.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 622.0 Td (The primary request is:) Tj ET
+0.090 0.086 0.082 rg
+54.0 539.0 487.0 68.0 re f
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 592.0 Td (POST /api/v1/memberships/:membershipId/renew) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 582.0 Td ({) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 572.0 Td (  "months": 1 | 3 | 6 | 12,) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 562.0 Td (  "paymentMethodId": "pm_demo_success" | "pm_demo_declined") Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 552.0 Td (}) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 1978 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (06) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (2. Scope and non-goals) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (The domain contains users, memberships, and payments. Roles are MEMBER and ADMIN. A member may) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (renew only their own membership. A cancelled membership cannot be renewed. Active memberships) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (extend from their current expiration date; expired memberships extend from the current time.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 706.0 Td (The sample does not include real payment processing, card data, Redis, Kafka, RabbitMQ,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (Kubernetes, a microservice split, a plan catalog, complex entitlement states, refresh-token) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (rotation, MFA, password reset, fraud scoring, or a full admin console. These are deliberate) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (boundaries. The point is to show sound decisions on a complete request, not to inflate the) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 654.0 Td (architecture.) Tj ET
+1.000 0.973 0.937 rg
+54.0 579.0 487.0 60.0 re f
+0.996 0.431 0.000 rg
+54.0 579.0 3.0 60.0 re f
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 622.0 Td (Production consideration) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 611.0 Td (Add the next capability when a real requirement creates a reason: provider idempotency) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 600.0 Td (and reconciliation for payments, a durable identity lifecycle, stronger observability,) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 589.0 Td (rate limiting, and integration/browser tests in CI.) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 13 0 R >>
+endobj
+15 0 obj
+<< /Length 2646 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (07) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (3. Architecture) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (The repository is a pnpm workspace:) Tj ET
+0.090 0.086 0.082 rg
+54.0 648.0 487.0 88.0 re f
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 721.0 Td (membership-ops-demo/) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 711.0 Td (  apps/) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 701.0 Td (    api/          NestJS, Prisma, PostgreSQL boundary) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 691.0 Td (    web/          Next.js product UI and Developer View) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 681.0 Td (  docs/           handbook, decisions, deployment, security) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 671.0 Td (  scripts/        deterministic source-snippet extraction) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 661.0 Td (  docker-compose.yml) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 639.0 Td (The runtime flow is:) Tj ET
+0.090 0.086 0.082 rg
+54.0 486.0 487.0 138.0 re f
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 609.0 Td (Browser) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 599.0 Td (  -> Next.js UI) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 589.0 Td (  -> POST /api/v1/memberships/:membershipId/renew) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 579.0 Td (  -> Nginx or local API port) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 569.0 Td (  -> Nest controller) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 559.0 Td (  -> ValidationPipe and JwtAuthGuard) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 549.0 Td (  -> MembershipsService) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 539.0 Td (  -> Prisma read) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 529.0 Td (  -> pricing function) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 519.0 Td (  -> PaymentGateway) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 509.0 Td (  -> Prisma transaction) Tj ET
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 499.0 Td (  -> normalized HTTP response) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 477.0 Td (The API is a modular monolith. auth, memberships, payments, and prisma have clear local) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 464.0 Td (responsibilities. The common filter and logging middleware are cross-cutting infrastructure.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 451.0 Td (There is no application-wide generic framework that hides the actual business path.) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 15 0 R >>
+endobj
+17 0 obj
+<< /Length 1855 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (08) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (4. Repository structure) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (apps/api/src/main.ts creates the Nest app, establishes the api/v1 prefix, configures CORS,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (installs the request logger, enables the whitelist validation pipe, and registers the global) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (exception filter. apps/api/src/app.module.ts composes feature modules.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 706.0 Td (apps/api/src/auth/ contains login, DTO validation, JWT verification, and the CurrentUser) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (parameter decorator. apps/api/src/memberships/ contains the controller, repository, service,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (renewal DTO, pricing function, and tests. apps/api/src/payments/ models the provider seam and) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (fake implementation. apps/api/src/prisma/ owns the Prisma client lifecycle.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 648.0 Td (apps/web/app/page.tsx is intentionally easy to open. It contains the login screen, overview,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 635.0 Td (renewal form, payments view, membership detail view, and Developer View. Its visual system) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 622.0 Td (lives in apps/web/app/globals.css. scripts/extract-developer-flow.mjs reads source markers and) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 609.0 Td (writes the generated JSON consumed by the browser.) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 17 0 R >>
+endobj
+19 0 obj
+<< /Length 2388 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (09) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (5. Primary request lifecycle) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (The request is intentionally linear:) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 732.0 Td (1. The UI selects months and a demo payment ID. 2. handleRenew sends the membership ID from the) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 719.0 Td (API response and the selected input. 3. Nest maps the URL and body into) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 706.0 Td (MembershipsController.renewMembership. 4. ValidationPipe rejects extra fields and unsupported) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (values. 5. JwtAuthGuard verifies the bearer JWT and attaches its subject to the request. 6.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (CurrentUser passes the verified identity to the service. 7. The service loads the membership) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (and checks owner or admin access. 8. The service rejects cancelled state. 9.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 654.0 Td (calculateRenewalPrice returns amount and discount in integer cents. 10. PaymentGateway.charge) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 641.0 Td (runs the fake external boundary. 11. A successful payment is persisted with the membership) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 628.0 Td (expiration update in one Prisma transaction. 12. The controller returns a stable success) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 615.0 Td (payload.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 596.0 Td (The request logger records a correlation ID and the filter converts known or unknown failures) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 583.0 Td (into a consistent shape.) Tj ET
+1.000 0.973 0.937 rg
+54.0 519.0 487.0 49.0 re f
+0.996 0.431 0.000 rg
+54.0 519.0 3.0 49.0 re f
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 551.0 Td (Relevant source) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 540.0 Td (apps/api/src/memberships/memberships.controller.ts first, then jump to) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 529.0 Td (MembershipsService.renewMembership.) Tj ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 19 0 R >>
+endobj
+21 0 obj
+<< /Length 2400 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (10) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (6. Login and authentication) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (POST /api/v1/auth/login accepts email and password through LoginDto. The global validation pipe) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (checks email shape and a minimum password length. AuthService.login lowercases the email for) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (lookup, retrieves the user through Prisma, and uses bcrypt.compare. A missing user and a wrong) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 712.0 Td (password produce the same AUTHENTICATION_FAILED application error.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (On success, JwtService.signAsync signs the user ID as sub, along with email and role. The) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (response includes the access token and a safe user object containing ID, email, and role. The) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (password hash is never returned. The browser keeps this short-lived demo token in session) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 654.0 Td (storage and sends it as a bearer token.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 635.0 Td (JwtAuthGuard is the explicit boundary before protected controller methods. It checks the) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 622.0 Td (Authorization prefix, verifies signature and expiry using the server-side configured secret,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 609.0 Td (and places the verified identity on request.user. The CurrentUser decorator makes that identity) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 596.0 Td (available without allowing a caller to supply it.) Tj ET
+1.000 0.973 0.937 rg
+54.0 532.0 487.0 49.0 re f
+0.996 0.431 0.000 rg
+54.0 532.0 3.0 49.0 re f
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 564.0 Td (Security consideration) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 553.0 Td (Identity is established by the signed token and verified on the server. A body field) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 542.0 Td (would let a caller attempt to choose another identity.) Tj ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 21 0 R >>
+endobj
+23 0 obj
+<< /Length 1797 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (11) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (7. Authorization) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (Authentication and authorization are separate. A valid JWT proves who the caller is; it does) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (not prove that the caller may modify an arbitrary membership. In) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (MembershipsService.renewMembership, the service loads the membership, returns) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 712.0 Td (MEMBERSHIP_NOT_FOUND if it does not exist, then compares membership.userId with user.id for) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 699.0 Td (members. Admins are allowed to operate on any membership in this intentionally small role) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 686.0 Td (model.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (The authorization check is in the service rather than only in the UI or a controller decorator) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 654.0 Td (because it protects the business operation regardless of which future entry point calls it. The) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 641.0 Td (UI does not hide access rules; it simply presents the authenticated user's own overview.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 622.0 Td (Potential future policies include organization membership, named permissions, audit records,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 609.0 Td (and a dedicated policy layer. They are not needed for two roles and one resource today.) Tj ET
+endstream
+endobj
+24 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 23 0 R >>
+endobj
+25 0 obj
+<< /Length 1416 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (12) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (8. Input validation) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (RenewMembershipDto uses @IsIn\([1, 3, 6, 12]\) for months and @IsIn\(['pm_demo_success',) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td ('pm_demo_declined']\) for the payment scenario. The global ValidationPipe enables whitelist and) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (forbidNonWhitelisted, so unknown body properties are rejected rather than silently accepted.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 706.0 Td (Validation is deliberately before business logic and before the payment boundary. The fake) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (gateway is not responsible for deciding whether a term is valid. The DTO tests prove both a) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (supported request and rejected values.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 661.0 Td (In a larger API, validation messages could include a safe field-error array for client forms.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 648.0 Td (Stable top-level error codes should remain consistent even if wording changes.) Tj ET
+endstream
+endobj
+26 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 25 0 R >>
+endobj
+27 0 obj
+<< /Length 1868 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (13) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (9. Membership business rules) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (The service first finds the resource, then authorizes access, then checks membership state. The) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (order gives a clear error for missing records and avoids charging a payment method when the) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (caller is not allowed to act. Cancelled membership produces MEMBERSHIP_CANCELLED before pricing) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 712.0 Td (or payment. Active and expired membership are both valid renewal inputs.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (Renewal starts at:) Tj ET
+0.090 0.086 0.082 rg
+54.0 650.0 487.0 28.0 re f
+0.900 0.870 0.830 rg
+BT /F2 7.2 Tf 63.0 663.0 Td (max\(current validUntil, current time\)) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 641.0 Td (That means a member does not lose remaining active time. An expired membership starts from now) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 628.0 Td (instead of extending an old date. addMonths keeps date arithmetic in one testable function and) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 615.0 Td (does not mutate its input date.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 596.0 Td (The result sets the status to ACTIVE, stores the paid term, and returns the updated membership) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 583.0 Td (plus payment data. The payment is associated to the membership owner, not a user ID chosen by) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 570.0 Td (the browser.) Tj ET
+endstream
+endobj
+28 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 27 0 R >>
+endobj
+29 0 obj
+<< /Length 2149 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (14) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (10. Pricing) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (Pricing is pure domain logic in apps/api/src/memberships/pricing/pricing.ts. The discount table) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (is explicit:) Tj ET
+0.090 0.086 0.082 rg
+54.0 704.0 487.0 18.0 re f
+1.000 1.000 1.000 rg
+BT /F2 7.6 Tf 61.0 709.0 Td (Term | Discount | Formula for a $49.00 monthly plan) Tj ET
+1.000 1.000 1.000 rg
+54.0 684.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 689.0 Td (1 month | 0% | 4,900 cents) Tj ET
+0.950 0.955 0.965 rg
+54.0 664.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 669.0 Td (3 months | 5% | 13,965 cents) Tj ET
+1.000 1.000 1.000 rg
+54.0 644.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 649.0 Td (6 months | 10% | 26,460 cents) Tj ET
+0.950 0.955 0.965 rg
+54.0 624.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 629.0 Td (12 months | 15% | 49,980 cents) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 619.0 Td (The function calculates undiscounted cents, rounded discount cents, and final amount cents. It) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 606.0 Td (does not use floating-point currency. Keeping this function free from Nest and Prisma makes its) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 593.0 Td (four pricing tests fast and direct.) Tj ET
+1.000 0.973 0.937 rg
+54.0 518.0 487.0 60.0 re f
+0.996 0.431 0.000 rg
+54.0 518.0 3.0 60.0 re f
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 561.0 Td (Design rationale) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 550.0 Td (Integer cents make arithmetic deterministic for this domain. A production system may) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 539.0 Td (choose a database decimal type for broader monetary requirements, but it must still) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 528.0 Td (define rounding and currency rules explicitly.) Tj ET
+endstream
+endobj
+30 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 29 0 R >>
+endobj
+31 0 obj
+<< /Length 1562 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (15) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (11. Payment boundary) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (PaymentGateway is an abstract class token with a charge method. FakePaymentGateway returns a) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (deterministic provider reference for pm_demo_success and throws PaymentDeclinedError for) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (pm_demo_declined. There are no card numbers, secrets, or provider credentials in the project.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 706.0 Td (The service depends on the abstraction, not the fake class. This makes the external boundary) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (visible and lets tests control success or failure. A real adapter could call a provider SDK,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (but it would need to map provider response types and errors into domain-level results rather) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (than leak SDK exceptions through the API.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 648.0 Td (Payment runs after business checks and pricing but before database writes. That keeps a) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 635.0 Td (declined demo scenario from creating a payment row or extending membership.) Tj ET
+endstream
+endobj
+32 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 31 0 R >>
+endobj
+33 0 obj
+<< /Length 1978 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (16) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (12. Database design) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (The Prisma schema contains:) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 64.0 732.0 Td (- User: unique email, bcrypt hash, role, timestamps, one optional membership, and) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 76.0 719.0 Td (payments.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 64.0 703.0 Td (- Membership: one-to-one user relation, plan, integer monthly price, status, expiration,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 76.0 690.0 Td (timestamps, and payments.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 64.0 674.0 Td (- Payment: user and membership foreign keys, integer amount, term months, status,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 76.0 661.0 Td (deterministic provider reference, and creation time.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 645.0 Td (The database has unique user email and membership userId. Status and expiration have indexes) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 632.0 Td (for common operational queries. Payment history has composite indexes by user and membership) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 619.0 Td (with creation time. Relations use restrictive deletes for payment history and cascading delete) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 606.0 Td (from user to membership as a compact demo policy.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 587.0 Td (PostgreSQL is appropriate because the domain is relational and the key write must be atomic.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 574.0 Td (Prisma migrations keep schema change explicit and the typed client avoids unsafe string-built) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 561.0 Td (SQL.) Tj ET
+endstream
+endobj
+34 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 33 0 R >>
+endobj
+35 0 obj
+<< /Length 1333 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (17) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (13. Prisma access) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (PrismaService extends PrismaClient and connects/disconnects through Nest module lifecycle) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (hooks. MembershipsRepository owns the read shapes used by the feature: lookup by ID and) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (current-user overview with recent payments. The service does not know how Prisma filters or) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 712.0 Td (includes are written for these reads.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (The transaction writes use the transaction client passed to the callback. That detail matters:) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (using the root Prisma client for a write inside the callback would leave the transaction) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (boundary. The code calls tx.payment.create and tx.membership.update on the same transaction) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 654.0 Td (client.) Tj ET
+endstream
+endobj
+36 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 35 0 R >>
+endobj
+37 0 obj
+<< /Length 2005 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (18) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (14. Transaction semantics) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (After fake payment success, this.prisma.$transaction creates the Payment row and updates) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (Membership.validUntil. If the second write fails, Prisma rolls back the first write. The) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (service test mocks the transaction callback to prove both operations are requested together and) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 712.0 Td (separately verifies that a transaction failure does not return a success result.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (This transaction does not make a remote payment atomic with PostgreSQL. The external provider) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (has already seen the charge before the database callback begins. That is not a defect hidden by) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (the sample; it is the exact discussion point the architecture exposes.) Tj ET
+1.000 0.973 0.937 rg
+54.0 581.0 487.0 71.0 re f
+0.996 0.431 0.000 rg
+54.0 581.0 3.0 71.0 re f
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 635.0 Td (Production consideration) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 624.0 Td (Generate an idempotency key per renewal intent, persist a pending payment intent, make) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 613.0 Td (provider calls retry-safe, accept signed webhooks, reconcile asynchronous state, use an) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 602.0 Td (outbox for downstream work, and define compensating behavior for a successful charge) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 591.0 Td (whose local write cannot commit.) Tj ET
+endstream
+endobj
+38 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 37 0 R >>
+endobj
+39 0 obj
+<< /Length 2132 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (19) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (15. Error handling) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (Known failures use ApplicationError and stable codes:) Tj ET
+0.090 0.086 0.082 rg
+54.0 717.0 487.0 18.0 re f
+1.000 1.000 1.000 rg
+BT /F2 7.6 Tf 61.0 722.0 Td (Code | Status | Example) Tj ET
+1.000 1.000 1.000 rg
+54.0 697.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 702.0 Td (VALIDATION_FAILED | 400 | unsupported body value) Tj ET
+0.950 0.955 0.965 rg
+54.0 677.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 682.0 Td (AUTHENTICATION_FAILED | 401 | missing/invalid login or JWT) Tj ET
+1.000 1.000 1.000 rg
+54.0 657.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 662.0 Td (MEMBERSHIP_NOT_FOUND | 404 | unknown membership) Tj ET
+0.950 0.955 0.965 rg
+54.0 637.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 642.0 Td (MEMBERSHIP_ACCESS_DENIED | 403 | member targets another member) Tj ET
+1.000 1.000 1.000 rg
+54.0 617.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 622.0 Td (MEMBERSHIP_CANCELLED | 409 | cancelled state) Tj ET
+0.950 0.955 0.965 rg
+54.0 597.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 602.0 Td (PAYMENT_DECLINED | 402 | demo decline) Tj ET
+1.000 1.000 1.000 rg
+54.0 577.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 582.0 Td (INTERNAL_ERROR | 500 | unexpected failure) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 572.0 Td (ApplicationExceptionFilter recognizes application errors and selected Nest HTTP exceptions. It) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 559.0 Td (returns statusCode, code, message, and requestId. Unexpected errors are logged internally but) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 546.0 Td (expose only a generic client message. Stack traces and Prisma internals are not serialized into) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 533.0 Td (the response.) Tj ET
+endstream
+endobj
+40 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 39 0 R >>
+endobj
+41 0 obj
+<< /Length 1377 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (20) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (16. Logging and request correlation) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (requestLogger reads a bounded incoming X-Request-Id or generates a UUID. It returns the same ID) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (in the response header and logs method, route, status, duration, and authenticated user ID when) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (available. The exception filter adds stable code and internal diagnostic text for server-side) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 712.0 Td (diagnosis.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (The implementation intentionally avoids request-body logging and header serialization. It never) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (intentionally logs passwords, password hashes, JWTs, authorization headers, database URLs, or) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (credentials. In production, the same fields should flow into a redacting JSON logger,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 654.0 Td (centralized storage, and a retention policy.) Tj ET
+endstream
+endobj
+42 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 41 0 R >>
+endobj
+43 0 obj
+<< /Length 1976 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (21) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (17. Security decisions) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (The main security boundary is server-side identity and authorization. Environment variables) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (hold database configuration and signing material. .env is ignored, and the example file) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (contains placeholders only. Bcrypt protects stored passwords. Validation rejects extra fields) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 712.0 Td (and unsupported values. Prisma operations are typed and parameterized.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (The browser uses a short-lived bearer token in session storage for a transparent demo flow. A) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (real product could use a secure HttpOnly SameSite cookie and CSRF protection, a BFF, or an OIDC) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (client depending on deployment. The handbook records the actual choice and its limitation) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 654.0 Td (instead of implying that a demo token model is a complete identity platform.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 635.0 Td (Next emits basic security headers. The production proxy disables caching for authenticated API) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 622.0 Td (paths and preserves X-Request-Id. The Euronodes origin certificate covers vgym.mcorucu.com, and) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 609.0 Td (Cloudflare Proxy is enabled with Full \(strict\) TLS. Application login remains the product) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 596.0 Td (access boundary.) Tj ET
+endstream
+endobj
+44 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 43 0 R >>
+endobj
+45 0 obj
+<< /Length 1838 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (22) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (18. Testing strategy) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (Tests focus on behavior and decision points:) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 64.0 732.0 Td (- pricing for 1, 3, 6, and 12 months) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 64.0 716.0 Td (- date extension without mutation) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 64.0 700.0 Td (- DTO rejection for invalid terms and payment methods) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 64.0 684.0 Td (- generic invalid password behavior) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 64.0 668.0 Td (- unauthenticated guard rejection and verified identity attachment) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 64.0 652.0 Td (- member ownership denial) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 64.0 636.0 Td (- cancelled membership rejection) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 64.0 620.0 Td (- payment decline with no database transaction) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 64.0 604.0 Td (- successful payment and membership update in one transaction) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 64.0 588.0 Td (- transaction failure propagation) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 572.0 Td (The suite is unit-oriented and fast. It does not claim arbitrary 100% coverage. A production) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 559.0 Td (pipeline should add a PostgreSQL-backed integration test covering login, migrations, renewal) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 546.0 Td (persistence, and rollback, plus a browser smoke test for login and both payment scenarios.) Tj ET
+endstream
+endobj
+46 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 45 0 R >>
+endobj
+47 0 obj
+<< /Length 1762 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (23) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (19. UI architecture) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (The UI is a real Next.js client page with a login view and an authenticated operational) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (workspace. It calls the API for login, overview, renewal, and refreshed state. It does not) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (invent a membership ID or user ID. The membership ID used by renewal comes from the API) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 712.0 Td (overview response.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (Overview includes current user, plan, status, valid-until date, monthly price, recent payment,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (a clear primary renewal CTA, term selection, discount preview, and demo payment scenarios.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (Membership and Payments views provide a compact read model. The UI shows stable error codes and) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 654.0 Td (messages returned by the API.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 635.0 Td (The CSS adapts the warm workspace and dark shell language of the Command Center reference while) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 622.0 Td (keeping the content and component system independent. Focus styles, labels, fieldsets,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 609.0 Td (responsive grids, and text-based status all support accessibility.) Tj ET
+endstream
+endobj
+48 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 47 0 R >>
+endobj
+49 0 obj
+<< /Length 1649 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (24) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (20. Developer View architecture) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (Developer View presents the request as 11 stages: request, validation, authentication,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (authorization, business logic, pricing, payment, database transaction, response, errors, and) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (logging. Each stage shows a source path and a snippet.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 706.0 Td (The snippets are not manually copied into the page. scripts/extract-developer-flow.mjs reads) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (source files from the repository using stable start/end markers and writes) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (apps/web/public/developer-flow.json. The root dev:web and build scripts run extraction before) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (Next starts or compiles. This is a small deterministic mechanism with an honest limitation: if) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 654.0 Td (a source shape changes without updating a marker, the extractor must be fixed.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 635.0 Td (Developer View helps a reviewer understand the code but explicitly does not replace opening the) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 622.0 Td (real source.) Tj ET
+endstream
+endobj
+50 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 49 0 R >>
+endobj
+51 0 obj
+<< /Length 1683 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (25) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (21. Deployment) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (Local Compose starts PostgreSQL on localhost port 5433. Production uses an isolated Compose) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (project named vgym_membership_ops, with a dedicated database container, application) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (environment, generated credentials, named volume, and project-specific internal network. Its) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 712.0 Td (source directory is /srv/vgym-membership-ops; API and web join the Euronodes server's existing) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 699.0 Td (eskisehiraraba_prod_edge network only for proxy routing.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (The verified Euronodes host has a shared Nginx proxy on ports 80 and 443. The safe integration) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (is an additional server block, not replacement of the global proxy. /api/v1/ routes to the API) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 654.0 Td (container and / routes to the web container. The proxy is tested and reloaded in place after) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 641.0 Td (the new configuration and certificate are ready. Unrelated Compose projects and resources are) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 628.0 Td (not part of the release command.) Tj ET
+endstream
+endobj
+52 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 51 0 R >>
+endobj
+53 0 obj
+<< /Length 1267 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (26) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (22. Known limitations) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (The fake payment boundary, simple JWT lifecycle, minimal logs, small membership state machine,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (lack of fraud controls, lack of rate limiting, and demo seed are intentional. See) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (docs/KNOWN_LIMITATIONS.md for the complete list.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 706.0 Td (The most important limitation is distributed payment consistency. PostgreSQL can guarantee the) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (local payment and membership rows commit together. It cannot undo or include a remote provider) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (charge automatically. Production correctness comes from idempotency, durable intent state,) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (provider webhooks, retries, reconciliation, and compensating decisions.) Tj ET
+endstream
+endobj
+54 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 53 0 R >>
+endobj
+55 0 obj
+<< /Length 1472 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (27) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (23. Production evolution) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (A sensible next sequence is:) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 732.0 Td (1. Add request idempotency and a payment intent state machine. 2. Add provider webhook) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 719.0 Td (verification and reconciliation jobs. 3. Add integration tests against PostgreSQL and browser) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 706.0 Td (smoke tests in CI. 4. Add structured redacting logs, metrics, tracing, and alerting. 5. Replace) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (demo identity lifecycle with OIDC or secure cookie sessions, refresh rotation, MFA, and) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (recovery. 6. Add rate limiting and account protection based on observed abuse risk. 7.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (Introduce an outbox only when downstream asynchronous work exists.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 648.0 Td (This order preserves the understandable monolith while addressing the highest correctness and) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 635.0 Td (operational risks first.) Tj ET
+endstream
+endobj
+56 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 55 0 R >>
+endobj
+57 0 obj
+<< /Length 1873 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (28) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (24. Review path) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 751.0 Td (Start in the UI at Overview and trigger a successful renewal. Inspect the browser request, then) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 738.0 Td (follow the controller, DTO, global validation pipe, JWT guard, CurrentUser, service) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 725.0 Td (authorization check, pricing function, and gateway abstraction. The source map in the appendix) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 712.0 Td (provides the corresponding paths.) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 693.0 Td (Next, inspect the transaction callback and compare local rollback behavior with the external) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 680.0 Td (payment boundary. The declined scenario demonstrates that membership expiration remains) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 667.0 Td (unchanged. The behavior tests, deployment shape, and known limitations document the remaining) Tj ET
+0.259 0.239 0.220 rg
+BT /F1 9.0 Tf 54.0 654.0 Td (operational boundaries.) Tj ET
+1.000 0.973 0.937 rg
+54.0 579.0 487.0 60.0 re f
+0.996 0.431 0.000 rg
+54.0 579.0 3.0 60.0 re f
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 622.0 Td (Production consideration) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 611.0 Td (It does not claim that an external payment provider participates in a PostgreSQL) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 600.0 Td (transaction. That boundary requires a production payment state machine and) Tj ET
+0.455 0.333 0.235 rg
+BT /F1 8.3 Tf 65.0 589.0 Td (reconciliation design.) Tj ET
+endstream
+endobj
+58 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 57 0 R >>
+endobj
+59 0 obj
+<< /Length 3268 >>
+stream
+0.890 0.878 0.867 RG
+0.5 w 54.0 815.0 m 541.0 815.0 l S
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 54.0 826.0 Td (MEMBERSHIP OPS / TECHNICAL HANDBOOK) Tj ET
+0.475 0.439 0.404 rg
+BT /F2 6.5 Tf 520.0 826.0 Td (29) Tj ET
+0.259 0.239 0.220 rg
+BT /F2 17.0 Tf 54.0 780.0 Td (Appendix: exact source map) Tj ET
+0.090 0.086 0.082 rg
+54.0 736.0 487.0 18.0 re f
+1.000 1.000 1.000 rg
+BT /F2 7.6 Tf 61.0 741.0 Td (Concern | File | Function/class) Tj ET
+1.000 1.000 1.000 rg
+54.0 716.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 721.0 Td (UI trigger | apps/web/app/page.tsx | handleRenew, OverviewView) Tj ET
+0.950 0.955 0.965 rg
+54.0 696.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 701.0 Td (Request | apps/api/src/memberships/memberships.controller.ts | MembershipsController.renewMembership) Tj ET
+1.000 1.000 1.000 rg
+54.0 676.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 681.0 Td (Validation | apps/api/src/memberships/dto/renew-membership.dto.ts | RenewMembershipDto) Tj ET
+0.950 0.955 0.965 rg
+54.0 656.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 661.0 Td (Authentication | apps/api/src/auth/guards/jwt-auth.guard.ts | JwtAuthGuard.canActivate) Tj ET
+1.000 1.000 1.000 rg
+54.0 636.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 641.0 Td (Login and password comparison | apps/api/src/auth/auth.service.ts | AuthService.login) Tj ET
+0.950 0.955 0.965 rg
+54.0 616.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 621.0 Td (Identity | apps/api/src/auth/decorators/current-user.decorator.ts | CurrentUser) Tj ET
+1.000 1.000 1.000 rg
+54.0 596.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 601.0 Td (Authorization | apps/api/src/memberships/memberships.service.ts | member ownership check) Tj ET
+0.950 0.955 0.965 rg
+54.0 576.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 581.0 Td (Business logic | apps/api/src/memberships/memberships.service.ts | renewMembership) Tj ET
+1.000 1.000 1.000 rg
+54.0 556.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 561.0 Td (Pricing | apps/api/src/memberships/pricing/pricing.ts | calculateRenewalPrice) Tj ET
+0.950 0.955 0.965 rg
+54.0 536.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 541.0 Td (Payment | apps/api/src/payments/fake-payment.gateway.ts | FakePaymentGateway.charge) Tj ET
+1.000 1.000 1.000 rg
+54.0 516.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 521.0 Td (Database | apps/api/src/memberships/memberships.service.ts | this.prisma.$transaction) Tj ET
+0.950 0.955 0.965 rg
+54.0 496.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 501.0 Td (Response | apps/api/src/memberships/memberships.controller.ts | controller return) Tj ET
+1.000 1.000 1.000 rg
+54.0 476.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 481.0 Td (Errors | apps/api/src/common/filters/application-exception.filter.ts | catch) Tj ET
+0.950 0.955 0.965 rg
+54.0 456.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 461.0 Td (Logging | apps/api/src/common/logging/request-logger.middleware.ts | requestLogger) Tj ET
+1.000 1.000 1.000 rg
+54.0 436.0 487.0 18.0 re f
+0.259 0.239 0.220 rg
+BT /F1 7.6 Tf 61.0 441.0 Td (Important tests | apps/api/src/memberships/memberships.service.spec.ts | renewal behavior suite) Tj ET
+endstream
+endobj
+60 0 obj
+<< /Type /Page /Parent 61 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 59 0 R >>
+endobj
+61 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R 34 0 R 36 0 R 38 0 R 40 0 R 42 0 R 44 0 R 46 0 R 48 0 R 50 0 R 52 0 R 54 0 R 56 0 R 58 0 R 60 0 R] /Count 29 >>
+endobj
+62 0 obj
+<< /Type /Catalog /Pages 61 0 R >>
+endobj
+xref
+0 63
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000000153 00000 n 
+0000000822 00000 n 
+0000000959 00000 n 
+0000003376 00000 n 
+0000003513 00000 n 
+0000003961 00000 n 
+0000004098 00000 n 
+0000005679 00000 n 
+0000005817 00000 n 
+0000008004 00000 n 
+0000008143 00000 n 
+0000010174 00000 n 
+0000010313 00000 n 
+0000013012 00000 n 
+0000013151 00000 n 
+0000015059 00000 n 
+0000015198 00000 n 
+0000017639 00000 n 
+0000017778 00000 n 
+0000020231 00000 n 
+0000020370 00000 n 
+0000022220 00000 n 
+0000022359 00000 n 
+0000023828 00000 n 
+0000023967 00000 n 
+0000025888 00000 n 
+0000026027 00000 n 
+0000028229 00000 n 
+0000028368 00000 n 
+0000029983 00000 n 
+0000030122 00000 n 
+0000032153 00000 n 
+0000032292 00000 n 
+0000033678 00000 n 
+0000033817 00000 n 
+0000035875 00000 n 
+0000036014 00000 n 
+0000038199 00000 n 
+0000038338 00000 n 
+0000039768 00000 n 
+0000039907 00000 n 
+0000041936 00000 n 
+0000042075 00000 n 
+0000043966 00000 n 
+0000044105 00000 n 
+0000045920 00000 n 
+0000046059 00000 n 
+0000047761 00000 n 
+0000047900 00000 n 
+0000049636 00000 n 
+0000049775 00000 n 
+0000051095 00000 n 
+0000051234 00000 n 
+0000052759 00000 n 
+0000052898 00000 n 
+0000054824 00000 n 
+0000054963 00000 n 
+0000058284 00000 n 
+0000058423 00000 n 
+0000058676 00000 n 
+trailer
+<< /Size 63 /Root 62 0 R >>
+startxref
+58727
+%%EOF
