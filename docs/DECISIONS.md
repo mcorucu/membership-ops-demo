@@ -2,13 +2,13 @@
 
 ## ADR-001: NestJS for the API
 
-**Context:** The sample needs an explicit HTTP boundary, dependency injection, guards, pipes, and a structure that an interviewer can navigate quickly.
+**Context:** The sample needs an explicit HTTP boundary, dependency injection, guards, pipes, and a structure that a reviewer can navigate quickly.
 
 **Decision:** Use NestJS with small feature modules.
 
 **Alternatives:** Express with handwritten composition; Fastify; a serverless handler.
 
-**Trade-offs:** NestJS adds framework ceremony, but the ceremony makes validation, guards, filters, and test seams obvious in a live discussion.
+**Trade-offs:** NestJS adds framework ceremony, but the ceremony makes validation, guards, filters, and test seams obvious during review.
 
 ## ADR-002: PostgreSQL and Prisma
 
@@ -22,7 +22,7 @@
 
 ## ADR-003: JWT authentication
 
-**Context:** The frontend and API are separate processes and the interview needs an easy-to-follow authenticated request.
+**Context:** The frontend and API are separate processes and the sample needs an easy-to-follow authenticated request.
 
 **Decision:** Login signs a short-lived JWT; `JwtAuthGuard` verifies it and `CurrentUser` exposes the verified subject.
 
@@ -52,7 +52,7 @@
 
 ## ADR-006: Monolithic service
 
-**Context:** The domain is intentionally small and must be understandable in an interview.
+**Context:** The domain is intentionally small and must remain understandable end to end.
 
 **Decision:** Keep one NestJS application with feature modules.
 
@@ -72,7 +72,7 @@
 
 ## ADR-008: Next.js UI
 
-**Context:** The interviewer needs a real product surface that calls the API and makes the request trace visible.
+**Context:** A reviewer needs a real product surface that calls the API and makes the request trace visible.
 
 **Decision:** Use Next.js with a responsive single-workspace UI and same-origin production API paths.
 

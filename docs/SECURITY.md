@@ -36,4 +36,4 @@ Production uses `NODE_ENV=production`, built containers, a private PostgreSQL ne
 - [x] generic 500 response
 - [x] Production DNS record, origin certificate, HTTP redirect, and origin HTTPS routing
 - [x] Cloudflare Proxy and Full (strict) mode verified at the public edge
-- [ ] Production rate limiting and full identity lifecycle, deliberately out of scope for this interview sample
+- [ ] Production rate limiting and full identity lifecycle, deliberately out of scope for this engineering sample

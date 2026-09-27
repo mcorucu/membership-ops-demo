@@ -167,7 +167,7 @@ class PdfBuilder:
         self.page.rect(0, 0, W, H, SHELL)
         self.page.rect(19, 42, 10, 10, ORANGE)
         self.page.rect(19, H - 28, 50, 1.2, (1.0, 0.718, 0.302))
-        self.page.text(54, 735, "ENGINEERING INTERVIEW SAMPLE / VERSION 1.0", 8, "F2", (1.0, 0.718, 0.302))
+        self.page.text(54, 735, "ENGINEERING CODE SAMPLE / VERSION 1.0", 8, "F2", (1.0, 0.718, 0.302))
         self.page.text(54, 665, "Membership Ops", 36, "F2", (1, 1, 1))
         self.page.text(54, 625, "A readable path from UI action to an authenticated,", 11, "F1", (0.78, 0.75, 0.73))
         self.page.text(54, 608, "authorized, transactional renewal request.", 11, "F1", (0.78, 0.75, 0.73))
@@ -176,8 +176,8 @@ class PdfBuilder:
     def build(self):
         self.cover(); self.new_page()
         self.page.text(54, self.page.y, "Contents", 21, "F2", INK); self.page.y -= 35
-        self.para("A compact navigation map for the live code walkthrough.", 8, 12, 95, MUTED)
-        items = ["1. Project purpose", "2. Scope and non-goals", "3. Architecture", "4. Repository structure", "5. Primary request lifecycle", "6. Login and authentication", "7. Authorization", "8. Input validation", "9. Membership business rules", "10. Pricing", "11. Payment boundary", "12. Database design", "13. Prisma access", "14. Transaction semantics", "15. Error handling", "16. Logging and request correlation", "17. Security decisions", "18. Testing strategy", "19. UI architecture", "20. Developer View architecture", "21. Deployment", "22. Known limitations", "23. Production evolution", "24. Interview walkthrough", "Appendix: exact source map"]
+        self.para("A compact navigation map for the implementation.", 8, 12, 95, MUTED)
+        items = ["1. Project purpose", "2. Scope and non-goals", "3. Architecture", "4. Repository structure", "5. Primary request lifecycle", "6. Login and authentication", "7. Authorization", "8. Input validation", "9. Membership business rules", "10. Pricing", "11. Payment boundary", "12. Database design", "13. Prisma access", "14. Transaction semantics", "15. Error handling", "16. Logging and request correlation", "17. Security decisions", "18. Testing strategy", "19. UI architecture", "20. Developer View architecture", "21. Deployment", "22. Known limitations", "23. Production evolution", "24. Review path", "Appendix: exact source map"]
         for item in items: self.para(item, 9, 13, 95, INK)
         self.new_page()
 
